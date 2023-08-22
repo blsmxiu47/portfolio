@@ -4,3 +4,21 @@ $primary-color: #7286D3;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('tff');
 }
+
+// secondary
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('./assets/fonts/helvetica-neu.ttf') format('tff');
+// }
+
+// tertiary
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('./assets/fonts/helvetica-neu.ttf') format('tff');
+// }
+
+input,
+textarea {
+  font-family: 'Helvetica Neue';
+  font-size: 1rem;
+}
