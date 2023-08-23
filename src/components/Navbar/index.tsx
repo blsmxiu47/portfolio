@@ -8,19 +8,25 @@ import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
+        setMenuOpen(false); // Set initial state after component mounts
+    }, []);
     const [size, setSize] = useState({
         width: 0,
         height: 0,
     });
     
     useEffect(() => {
-        const handleResize = () => {
+        function handleResize () {
             setSize({
                 width: window.innerWidth,
                 height: window.innerHeight,
             });
-        };
+        }
+
+        handleResize();
+        
         window.addEventListener("resize", handleResize);
 
         return () => window.removeEventListener("resize", handleResize);
@@ -51,25 +57,21 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/" onClick={menuToggleHandler}>
                                 Home
-                                {/* <FontAwesomeIcon icon={faHome} color="#000" /> */}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/projects" onClick={menuToggleHandler}>
                                 Projects
-                                {/* <FontAwesomeIcon icon={faGears} color="#000" /> */}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/about-me" onClick={menuToggleHandler}>
                                 About Me
-                                {/* <FontAwesomeIcon icon={faUser} color="#000" /> */}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact" onClick={menuToggleHandler}>
                                 Contact
-                                {/* <FontAwesomeIcon icon={faEnvelope} color="#000" /> */}
                             </NavLink>
                         </li>
                     </ul>
