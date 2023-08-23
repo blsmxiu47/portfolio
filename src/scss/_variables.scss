@@ -2,3 +2,22 @@ $primary-color: #7286D3;
 $secondary-color: #FFB4B4;
 $accent: #9ED2BE;
 $bg: #fff;
+
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
+
+:export {
+    primaryColor: $primary-color;
+    secondaryColor: $secondary-color;
+    accentColor: $accent;
+    bgColor: $bg;
+}
