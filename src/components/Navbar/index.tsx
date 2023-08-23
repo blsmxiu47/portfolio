@@ -1,11 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars, faEnvelope, faGears, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faCircleHalfStroke, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/images/logo.png';
 import './index.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -76,6 +74,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </nav>
+                <button aria-label="dark mode">
+                    <FontAwesomeIcon icon={faCircleHalfStroke} size="2x" />
+                </button>
                 <div className="header__content__toggle">
                         {!menuOpen ? (
                             <FontAwesomeIcon

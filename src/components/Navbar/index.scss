@@ -13,6 +13,13 @@
         height: 8rem;
         width: auto;
     }
+    button {
+        background: transparent;
+        // padding: 0.5rem 1rem;
+        cursor: pointer;
+        color: $primary-color;
+        border: none;
+    }
     &__content {
         overflow: hidden;
         color: $primary-color;
