@@ -3,8 +3,10 @@ $secondary-color: #FFB4B4;
 $accent: #9ED2BE;
 $bg: #fff;
 
-$spacing-md: 16px;
-$spacing-lg: 32px;
+$spacing-md: 48px;
+$spacing-lg: 64px;
+
+$border-radius: 12px;
 
 @mixin breakpoint($point) {
     @if $point == md {

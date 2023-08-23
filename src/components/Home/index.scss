@@ -1,0 +1,43 @@
+@import '../../scss/_variables.scss';
+
+.home-page {
+    top: 40%;
+}
+
+.hero {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+    @include breakpoint(md) {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem 1rem;
+
+        li {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.social-icon {
+    color: $primary-color;
+    font-size: 4rem;
+}
