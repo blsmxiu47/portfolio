@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 html {
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 body {
     margin: 0;
+    width: 100%;
     font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
-    color: #333;
+    color: #000;
     background: #fff;
     overflow: hidden;
     display: block;

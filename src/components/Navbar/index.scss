@@ -1,29 +1,18 @@
-@import '../../scss/variables.scss';
-
-@mixin breakpoint($point) {
-    @if $point == md {
-        // 768px
-        @media (min-width: 48em) {
-            @content;
-        }
-    }
-}
+@import '../../scss/_variables.scss';
 
 .header {
     background: $bg;
     width: 100%;
     height: 100px;
     padding: 0 1.5rem;
-    transition: 0.3s ease all;
     @include breakpoint(md) {
         padding: 0 3rem;
     }
-
+    transition: 0.3s ease all;
     img {
         height: 8rem;
         width: auto;
     }
-
     &__content {
         overflow: hidden;
         color: $primary-color;
@@ -35,7 +24,6 @@
         justify-content: space-between;
         position: relative;
         z-index: 100;
-
         &__nav {
             top: 0;
             right: 100%;
@@ -59,29 +47,26 @@
                 height: 100%;
                 position: static;
             }
-
             ul {
                 list-style: none;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 32px;
+                margin-bottom: $spacing-lg;
                 @include breakpoint(md) {
                     flex-direction: row;
                     align-items: center;
                     margin-bottom: 0;
                     margin-right: calc(0.5rem + #{16px});
                 }
-
                 li {
                     &:not(:last-child) {
-                        margin-bottom:32px;
+                        margin-bottom: $spacing-lg;
                         @include breakpoint(md) {
                             margin-bottom: 0;
-                            margin-right: 16px;
+                            margin-right: $spacing-md;
                         }
                     }
-
                     a {
                         font-size: 3rem;
                         color: $primary-color;
@@ -89,16 +74,33 @@
                         position: relative;
                         text-decoration: none;
                         transition: 0.3s ease all;
-                
                         &:hover {
                             color: $secondary-color;
                         }
-            
                         &:active {
                             color: $accent;
                         }
                     }
                 }
+            }
+            &.isMenu {
+                display: flex;
+                transform: translate(100%);
+            }
+        }
+        &__toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: $primary-color;
+            font-size: 2rem;
+            transition: 0.3s ease all;
+            position: relative;
+            &:hover {
+                color: $secondary-color;
+            }
+            @include breakpoint(md) {
+                display: none;
             }
         }
     }
