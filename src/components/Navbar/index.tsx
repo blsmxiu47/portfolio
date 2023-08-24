@@ -63,7 +63,7 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about-me" onClick={menuToggleHandler}>
+                            <NavLink to="/about" onClick={menuToggleHandler}>
                                 About Me
                             </NavLink>
                         </li>
