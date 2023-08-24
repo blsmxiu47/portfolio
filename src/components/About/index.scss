@@ -5,10 +5,10 @@
 }
 
 .container {
+    display: flex;
+
     .hero {
-        // position: absolute;
-        // justify-content: center;
-        // display: block;
+        display: block;
         text-align: center;
         padding: 0 8rem;
         margin: 0;
@@ -29,9 +29,26 @@
         }
     }
 
-    .skills-container {
-        left: 50%;
-        // display: block;
-        position: relative;
+    .sequential-show {
+        display: flex;
+        flex-direction: row;
+
+        .pulse {
+            display: none;
+        }
+      
+        .visible {
+            display: block;
+            animation: pulse-animation 6s infinite;
+        }
+        
+        @keyframes pulse-animation {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
     }
 }
