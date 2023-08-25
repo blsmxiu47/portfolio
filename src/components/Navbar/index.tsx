@@ -74,7 +74,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </nav>
-                <button aria-label="dark mode">
+                <button title="Enable dark mode" aria-label="dark mode">
                     <FontAwesomeIcon icon={faCircleHalfStroke} size="2x" />
                 </button>
                 <div className="header__content__toggle">
