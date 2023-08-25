@@ -1,15 +1,15 @@
 @import '../../scss/_variables.scss';
 
-.about-page {
-    top: 40%;
-}
-
 .container {
     display: flex;
     flex-direction: column;
 
     @include breakpoint(md) {
         flex-direction: row;
+    }
+    
+    &.about-page {
+        top: 40%;
     }
 
     .hero {
@@ -79,7 +79,7 @@
         .pulse {
             display: none;
         }
-      
+    
         .visible {
             display: flex;
             justify-content: center;

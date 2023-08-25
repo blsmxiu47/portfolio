@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logoPython from '../../assets/images/logo_python.svg';
 import logoGolang from '../../assets/images/logo_golang.svg';
 import logoLinux from '../../assets/images/logo_linux.svg';
