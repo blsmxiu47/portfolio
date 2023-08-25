@@ -1,5 +1,11 @@
-import { faPython, faGolang, faLinux, faJs, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import logoPython from '../../assets/images/logo_python.svg';
+import logoGolang from '../../assets/images/logo_golang.svg';
+import logoLinux from '../../assets/images/logo_linux.svg';
+import logoJs from '../../assets/images/logo_js.svg';
+import logoReact from '../../assets/images/logo_reactjs.svg';
+import logoVue from '../../assets/images/logo_vuejs.svg';
+import logoCpp from '../../assets/images/logo_c_plus_plus.svg';
 import './index.scss';
 import Pulse from './Pulse';
 import SequentialShow from './SequentialShow';
@@ -18,22 +24,25 @@ const About = () => {
             </div>
             <SequentialShow delay={1000}>
                 <Pulse delay={1000} sequentialDelay={1000} >
-                    <FontAwesomeIcon icon={faPython} size="3x" />
+                    <img src={logoPython} alt="Python logo" />
                 </Pulse>
                 <Pulse delay={1000} sequentialDelay={2000} >
-                    <FontAwesomeIcon icon={faGolang} size="3x" />
+                    <img src={logoGolang} alt="Golang logo" />
                 </Pulse>
                 <Pulse delay={1000} sequentialDelay={3000} >
-                    <FontAwesomeIcon icon={faLinux} size="3x" />
+                    <img src={logoLinux} alt="Linux logo" />
                 </Pulse>
                 <Pulse delay={1000} sequentialDelay={4000} >
-                    <FontAwesomeIcon icon={faJs} size="3x" />
+                    <img src={logoJs} alt="Javascript logo" />
                 </Pulse>
                 <Pulse delay={1000} sequentialDelay={5000} >
-                    <FontAwesomeIcon icon={faReact} size="3x" />
+                    <img src={logoReact} alt="React logo" />
                 </Pulse>
                 <Pulse delay={1000} sequentialDelay={6000} >
-                    <FontAwesomeIcon icon={faVuejs} size="3x" />
+                    <img src={logoVue} alt="Vue logo" />
+                </Pulse>
+                <Pulse delay={1000} sequentialDelay={6000} >
+                    <img src={logoCpp} alt="C++ logo" />
                 </Pulse>
             </SequentialShow>
         </div>

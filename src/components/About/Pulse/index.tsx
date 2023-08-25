@@ -8,15 +8,14 @@ interface PulseProps {
 
 const Pulse: React.FC<PulseProps> = ({ children, delay, sequentialDelay }) => {
     const [visible, setVisible] = useState(false);
-    console.log(delay + sequentialDelay);
 
     useEffect(() => {
-        const timeoutId = setTimeout(() => {
+        const timer = setTimeout(() => {
             setVisible(true);
         }, delay + sequentialDelay);
 
         return () => {
-            clearTimeout(timeoutId);
+            clearTimeout(timer);
         };
     }, [delay, sequentialDelay]);
 

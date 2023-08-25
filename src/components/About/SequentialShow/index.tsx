@@ -28,7 +28,7 @@ const SequentialShow: React.FC<SequentialShowProps> = ({ children, delay }) => {
   return (
     <div className="sequential-show">
       {children.map((child, index) => (
-        <div key={index} className={`${currentChildIndex >= index ? "visible" : ""}`}>
+        <div key={index} className={`${currentChildIndex >= index ? "visible sequential-show__item"+(index+1) : ""}`}>
           {child}
         </div>
       ))}
