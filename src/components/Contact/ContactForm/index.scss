@@ -17,6 +17,10 @@
 
     input {
         margin: 0 0.5rem;
+
+        &.half-row {
+            width: 84%;
+        }
     }
 
     &__submit {
@@ -27,7 +31,7 @@
 }
 
 .form-input {
-    width: 100%;
+    width: 92%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -41,6 +45,7 @@
 
 
 .message-area {
+    margin: 0 0.5rem;
     min-height: 10rem;
 }
 

@@ -37,7 +37,7 @@ const ContactForm = () => {
                     <label htmlFor="first_name">First Name</label>
                     <input
                         {...register("first_name")}
-                        className="form-input"
+                        className="form-input half-row"
                         type="text"
                         placeholder="Abed"
                         maxLength={64}
@@ -47,7 +47,7 @@ const ContactForm = () => {
                     <label htmlFor="last_name">Last Name</label>
                     <input
                         {...register("last_name")}
-                        className="form-input"
+                        className="form-input half-row"
                         type="text"
                         placeholder="Nadir"
                         maxLength={64}

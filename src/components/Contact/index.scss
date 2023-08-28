@@ -3,6 +3,8 @@
 .contact-page {
     top: 20%;
     height: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contact-form {
@@ -11,12 +13,17 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    margin: 2rem;
+    margin: auto 4rem;
     max-width: fit-content;
     max-height: fit-content;
     background-color: #fff;
     border-color: #ccc;
     border-radius: 16px;
     box-shadow: 2px 2px 6px #bbb;
+
+    @include breakpoint(md) {
+        height: 100%;
+        margin: 0 4rem;
+    }
 }
 
