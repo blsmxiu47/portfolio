@@ -5,11 +5,11 @@ import "./index.scss";
 const Contact = () => {
     return (
         <section className="container contact-page">
-            <div className="contact-form">
-                <h1>Send me a message</h1>
+            <div className="contact-info">
+                <h2>Send me a message</h2>
                 <ContactForm />
             </div>
-            <div>
+            <div className="contact-info">
                 <ContactInfo />
             </div>
         </section>

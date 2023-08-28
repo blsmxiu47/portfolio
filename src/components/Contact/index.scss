@@ -2,28 +2,33 @@
 
 .contact-page {
     top: 20%;
-    height: auto;
-    justify-content: space-between;
     align-items: center;
+
+    @include breakpoint(md) {
+        justify-content: space-around;
+        align-items: center;
+    }
+    
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact-info {
+    display: block;
     padding: 2rem;
-    margin: auto 4rem;
-    max-width: fit-content;
-    max-height: fit-content;
+    margin: 2rem 4rem;
+    height: 296px;
+    width: 80%;
+    max-width: 361px;
     background-color: #fff;
     border-color: #ccc;
     border-radius: 16px;
     box-shadow: 2px 2px 6px #bbb;
 
     @include breakpoint(md) {
-        height: 100%;
+        min-width: 320px;
         margin: 0 4rem;
     }
-}
 
+    h2 {
+        margin-left: 1rem;
+    }
+}
