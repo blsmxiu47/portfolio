@@ -1,5 +1,69 @@
 @import '../../../scss/_variables.scss';
 
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0;
+}
+
+.form-group {
+    width: 100%;
+
+    label {
+        margin-left: 1rem;
+    }
+
+    input {
+        margin: 0 0.5rem;
+    }
+
+    &__submit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: $primary-color;
+}
+
+
+.message-area {
+    min-height: 10rem;
+}
+
+.btn {
+    &__submit {
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+
+        &:active {
+            background-color: darken($primary-color, 20%);
+        }
+    }
+}
+
 .modal {
     position: fixed;
     left: 0;
