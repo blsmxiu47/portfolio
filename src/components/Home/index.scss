@@ -4,13 +4,13 @@
     top: 40%;
 
     .hero {
-        display: grid;
-        justify-content: center;
+        display: block;
         text-align: center;
 
         @include breakpoint(md) {
             width: 50%;
             margin: 0 20rem;
+            text-align: left;
         }
 
         h1 {
