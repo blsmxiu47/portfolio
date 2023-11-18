@@ -28,7 +28,7 @@
 
             .main-name {
                 font-size: 3rem;
-                background: -webkit-linear-gradient(left, #3F0071, $emphasis);
+                background: -webkit-linear-gradient(left, #3F0071, var(--emphasis-color));
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

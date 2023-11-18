@@ -1,7 +1,7 @@
 @import '../../scss/_variables.scss';
 
 .header {
-    background: $bg;
+    background: var(--bg-color);
     width: 100%;
     height: 100px;
     padding: 0 1.5rem;
@@ -17,12 +17,12 @@
         background: transparent;
         // padding: 0.5rem 1rem;
         cursor: pointer;
-        color: $primary-color;
+        color: var(--primary-color);
         border: none;
     }
     &__content {
         overflow: hidden;
-        color: $primary-color;
+        color: var(--primary-color);
         margin: 0 auto;
         max-width: 1920px;
         height: 100%;
@@ -76,16 +76,16 @@
                     }
                     a {
                         font-size: 3rem;
-                        color: $primary-color;
+                        color: var(--primary-color);
                         padding: 0.15rem, 1.25rem;
                         position: relative;
                         text-decoration: none;
                         transition: 0.3s ease all;
                         &:hover {
-                            color: $secondary-color;
+                            color: var(--secondary-color);
                         }
                         &:active {
-                            color: $accent;
+                            color: var(--accent-color);
                         }
                     }
                 }
@@ -98,12 +98,12 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-            color: $primary-color;
+            color: var(--primary-color);
             font-size: 2rem;
             transition: 0.3s ease all;
             position: relative;
             &:hover {
-                color: $primary-color;
+                color: var(--primary-color);
             }
             @include breakpoint(md) {
                 display: none;

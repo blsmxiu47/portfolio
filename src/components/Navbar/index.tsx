@@ -1,9 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCircleHalfStroke, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/images/logo.png';
 import './index.scss';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -74,9 +75,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </nav>
-                <button title="Enable dark mode" aria-label="dark mode">
-                    <FontAwesomeIcon icon={faCircleHalfStroke} size="2x" />
-                </button>
+                <DarkModeToggle />
                 <div className="header__content__toggle">
                         {!menuOpen ? (
                             <FontAwesomeIcon

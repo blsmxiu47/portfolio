@@ -1,0 +1,48 @@
+@import 'scss/variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+// Dark and light theme colors
+html.dark {
+    --primary-color: #7286D3;
+    --primary-color-darker: color-mix(in srgb, var(--primary-color), #000 10%);
+    --primary-color-darkest: color-mix(in srgb, var(--primary-color), #000 20%);
+    --secondary-color: #FFB4B4; 
+    --accent-color: #9ED2BE;
+    --bg-color: #000;
+    --text-color: #fff;
+    --emphasis-color: #FB2576;;
+    --border-color: #ccc;
+    --border-shadow-color: #bbb;
+}
+html.light {
+    --primary-color: #7286D3;
+    --primary-color-darker: color-mix(in srgb, var(--primary-color), #000 10%);
+    --primary-color-darkest: color-mix(in srgb, var(--primary-color), #000 20%);
+    --secondary-color: #FFB4B4;
+    --accent-color: #9ED2BE;
+    --bg-color: #fff;
+    --text-color: #000;
+    --emphasis-color: #FB2576;
+    --border-color: #ccc;
+    --border-shadow-color: #bbb;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,9 +1,24 @@
-$primary-color: #7286D3;
-$secondary-color: #FFB4B4;
-$accent: #9ED2BE;
-$bg: #fff;
-$emphasis: #FB2576;
+// Colors
+// Dark mode
+$dark-primary-color: #7286D3;
+$dark-secondary-color: #FFB4B4;
+$dark-accent-color: #9ED2BE;
+$dark-bg-color: #000;
+$dark-text-color: #fff;
+$dark-emphasis-color: #FB2576;
+$dark-border-color: #ccc;
+$dark-border-shadow-color: #bbb;
+// Light mode 
+$light-primary-color: #7286D3;
+$light-secondary-color: #FFB4B4;
+$light-accent-color: #9ED2BE;
+$light-bg-color: #fff;
+$light-text-color: #000;
+$light-emphasis-color: #FB2576;
+$light-border-color: #ccc;
+$light-border-shadow-color: #bbb;
 
+// Spacing
 $spacing-md: 48px;
 $spacing-lg: 64px;
 
@@ -26,11 +41,4 @@ $border-radius: 12px;
             @content;
         }
     }
-}
-
-:export {
-    primaryColor: $primary-color;
-    secondaryColor: $secondary-color;
-    accentColor: $accent;
-    bgColor: $bg;
 }
