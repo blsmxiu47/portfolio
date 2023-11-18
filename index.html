@@ -1,10 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Portfolio</title>
+    <script>
+      if (
+        localStorage.getItem('color-theme') === 'light' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: light)').matches)
+      ) {
+        document.documentElement.classList.add('light');
+      } else {
+        document.documentElement.classList.remove('light');
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
