@@ -3,8 +3,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const SocialLinks = () => {
     return (
-        <ul>
-            <li>
+        <ul className="flex justify-center m-2">
+            <li className="p-4">
                 <a
                     target="_blank"
                     rel="noreferrer"
@@ -17,7 +17,7 @@ const SocialLinks = () => {
                     />
                 </a>
             </li>
-            <li>
+            <li className="p-4">
                 <a
                     target="_blank"
                     rel="noreferrer"
