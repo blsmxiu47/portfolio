@@ -5,8 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'console': ['Lucida Console', 'Courier New', 'monospace'],
+    },
     extend: {},
   },
   plugins: [],
 }
-
