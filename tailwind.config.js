@@ -12,6 +12,19 @@ export default {
       gridTemplateColumns: {
         '14': 'repeat(14, minmax(0, 1fr))',
       },
+      animation: {
+        'pulse': 'pulse 7s infinite',
+      },
+      keyframes: {
+        pulse: {
+          '0%, 100%': {
+            opacity: 0,
+          },
+          '50%': {
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],
