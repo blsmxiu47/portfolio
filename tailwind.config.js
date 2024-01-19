@@ -8,7 +8,11 @@ export default {
     fontFamily: {
       'console': ['Lucida Console', 'Courier New', 'monospace'],
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        '14': 'repeat(14, minmax(0, 1fr))',
+      },
+    },
   },
   plugins: [],
 }

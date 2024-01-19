@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+
+import '../../../index.css';
 
 interface PulseProps {
     children: React.ReactNode;
@@ -20,7 +22,7 @@ const Pulse: React.FC<PulseProps> = ({ children, delay, sequentialDelay }) => {
     }, [delay, sequentialDelay]);
 
     return (
-        <div className={`pulse ${visible ? "visible" : ""}`}>
+        <div className={`${visible ? "block" : "hidden"}`}>
             {children}
         </div>
     );
