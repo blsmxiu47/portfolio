@@ -9,7 +9,7 @@ import DarkModeToggle from './DarkModeToggle';
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     useEffect(() => {
-        setMenuOpen(false); // Set initial state after component mounts
+        setMenuOpen(false);
     }, []);
     const [size, setSize] = useState({
         width: 0,
@@ -42,54 +42,58 @@ const Navbar = () => {
     };
 
     return (
-        <header className="header">
-            <div className="header__content">
+        <header className="px-6 md:px-12">
+            <div className="flex items-center justify-between">
                 <Link to="/">
-                    <img src={Logo} alt="logo" />
+                    <img className="h-32" src={Logo} alt="logo" />
                 </Link>
                 <nav
-                    className={`${"header__content__nav"} ${
-                        menuOpen && size.width < 768 ? `${"isMenu"}` : ""
-                    }`}
+                    // className={`md:static md:w-auto flex flex-col md:flex-row text-center justify-center h-lvh md:h-auto md:backdrop-filter-none transition ease-in-out duration-300${menuOpen ? " fixed w-full backdrop-blur-[2px]" : "hidden"}`}
+                    className={`flex md:block w-full md:w-auto flex-col justify-center items-center text-center ${menuOpen ? "fixed top-0 left-0 h-lvh backdrop-blur" : "hidden"}`}
                 >
-                    <ul>
+                    <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
                         <li>
-                            <NavLink to="/" onClick={menuToggleHandler}>
+                            <NavLink className="text-[3rem] text-[var(--primary)]" to="/" onClick={menuToggleHandler}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/projects" onClick={menuToggleHandler}>
+                            <NavLink className="text-[3rem] text-[var(--primary)]" to="/projects" onClick={menuToggleHandler}>
                                 Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" onClick={menuToggleHandler}>
+                            <NavLink className="text-[3rem] text-[var(--primary)]" to="/about" onClick={menuToggleHandler}>
                                 About Me
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact" onClick={menuToggleHandler}>
+                            <NavLink className="text-[3rem] text-[var(--primary)]" to="/contact" onClick={menuToggleHandler}>
                                 Contact
                             </NavLink>
                         </li>
                     </ul>
                 </nav>
-                <DarkModeToggle />
-                <div className="header__content__toggle">
-                        {!menuOpen ? (
-                            <FontAwesomeIcon
-                                onClick={menuToggleHandler}
-                                icon={faBars}
-                                size="3x"
-                            />
-                        ) : (
-                            <FontAwesomeIcon
-                                onClick={menuToggleHandler}
-                                icon={faXmark}
-                                size="3x"
-                            />
-                        )}
+                <div className="flex justify-center gap-8">
+                    <DarkModeToggle />
+                    <button
+                        className="flex md:hidden flex-col items-center justify-between focus:outline-none text-[var(--primary)]"
+                        onClick={menuToggleHandler}
+                    >
+                        <span className="sr-only">Open main nav</span>
+                        <span
+                            aria-hidden="true"
+                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded${menuOpen ? " h-1 w-8 translate-y-[7.2px] rotate-45" : " -translate-y-2"}`}
+                        ></span>
+                        <span
+                            aria-hidden="true"
+                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded${menuOpen ? " opacity-0" : ""}`}
+                        ></span>
+                        <span
+                            aria-hidden="true"
+                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded${menuOpen ? " h-1 w-8 -translate-y-[7.2px] -rotate-45" : " translate-y-2"}`}
+                        ></span>
+                    </button>
                 </div>
             </div>
         </header>
