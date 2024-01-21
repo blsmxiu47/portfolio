@@ -1,9 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/images/logo.png';
-import './index.scss';
 import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
@@ -48,7 +45,6 @@ const Navbar = () => {
                     <img className="h-32" src={Logo} alt="logo" />
                 </Link>
                 <nav
-                    // className={`md:static md:w-auto flex flex-col md:flex-row text-center justify-center h-lvh md:h-auto md:backdrop-filter-none transition ease-in-out duration-300${menuOpen ? " fixed w-full backdrop-blur-[2px]" : "hidden"}`}
                     className={`flex md:block w-full md:w-auto flex-col justify-center items-center text-center ${menuOpen ? "fixed top-0 left-0 h-lvh backdrop-blur" : "hidden"}`}
                 >
                     <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
@@ -83,15 +79,15 @@ const Navbar = () => {
                         <span className="sr-only">Open main nav</span>
                         <span
                             aria-hidden="true"
-                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded${menuOpen ? " h-1 w-8 translate-y-[7.2px] rotate-45" : " -translate-y-2"}`}
+                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded ${menuOpen ? "translate-y-[10.6px] rotate-45" : " -translate-y-2"}`}
                         ></span>
                         <span
                             aria-hidden="true"
-                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded${menuOpen ? " opacity-0" : ""}`}
+                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded ${menuOpen ? "opacity-0" : ""}`}
                         ></span>
                         <span
                             aria-hidden="true"
-                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded${menuOpen ? " h-1 w-8 -translate-y-[7.2px] -rotate-45" : " translate-y-2"}`}
+                            className={`h-1.5 w-16 bg-current transform transition duration-500 ease-in-out rounded ${menuOpen ? " -translate-y-[10.6px] -rotate-45" : " translate-y-2"}`}
                         ></span>
                     </button>
                 </div>
