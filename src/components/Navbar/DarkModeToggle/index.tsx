@@ -2,7 +2,9 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 
-const DarkModeToggle: React.FC = () => {
+import '../../../index.css';
+
+export default function DarkModeToggle() {
     const [isDark, setIsDark] = useState(true);
 
     // Function to handle the dark mode toggle and set the theme for the whole app
@@ -27,5 +29,3 @@ const DarkModeToggle: React.FC = () => {
         </button>
     )
 };
-
-export default DarkModeToggle;

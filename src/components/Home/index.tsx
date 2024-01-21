@@ -1,4 +1,5 @@
 import SocialLinks from '../SocialLinks';
+
 import '../../index.css';
 
 export default function Home() {

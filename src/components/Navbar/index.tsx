@@ -1,9 +1,13 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+
 import Logo from '../../assets/images/logo.png';
+
 import DarkModeToggle from './DarkModeToggle';
 
-const Navbar = () => {
+import '../../index.css';
+
+export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     useEffect(() => {
         setMenuOpen(false);
@@ -94,6 +98,4 @@ const Navbar = () => {
             </div>
         </header>
     );
-}
-
-export default Navbar;
+};

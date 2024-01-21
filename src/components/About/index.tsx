@@ -8,6 +8,7 @@ import logoCpp from '../../assets/images/logo_c_plus_plus.svg';
 
 import Pulse from './Pulse';
 import SequentialShow from './SequentialShow';
+
 import '../../index.css';
 
 export default function About() {
