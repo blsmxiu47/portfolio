@@ -23,7 +23,7 @@ const DarkModeToggle: React.FC = () => {
             aria-label="dark mode"
             onClick={() => handleThemeToggle(isDark)}
         >
-            <FontAwesomeIcon icon={faCircleHalfStroke} size="2x" />
+            <FontAwesomeIcon className="text-[var(--primary)]" icon={faCircleHalfStroke} size="3x" />
         </button>
     )
 };
