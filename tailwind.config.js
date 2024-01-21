@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
+      'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       'console': ['Lucida Console', 'Courier New', 'monospace'],
     },
     extend: {
