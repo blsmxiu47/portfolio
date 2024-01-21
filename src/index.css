@@ -10,4 +10,28 @@
     --secondary-light: #FFB4B4;
     --secondary-dark: #FF7F7F;
     --accent-1: #9ED2BE;
-  }
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Helvetica Neue';
+        src: url('./assets/fonts/helvetica-neu.ttf') format('tff');
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    html {
+        font-size: 1rem;
+    }
+    
+    body {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
