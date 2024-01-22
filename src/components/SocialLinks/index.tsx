@@ -11,8 +11,8 @@ export default function SocialLinks() {
                     href="https://github.com/blsmxiu47"
                 >
                     <FontAwesomeIcon
+                        className="size-8"
                         icon={faGithub}
-                        size="4x"
                         color="#000"
                     />
                 </a>
@@ -24,8 +24,8 @@ export default function SocialLinks() {
                     href="https://www.linkedin.com/in/wes-warriner/"
                 >
                     <FontAwesomeIcon
+                        className="size-8"
                         icon={faLinkedin}
-                        size="4x"
                         color="#0A66C2"
                     />
                 </a>
