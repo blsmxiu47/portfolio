@@ -13,41 +13,41 @@ import '../../index.css';
 
 export default function About() {
     return (
-        <div className="mx-2 my-32 md:my-96">
+        <div className="mx-2 my-16 md:my-48">
             <div className="flex flex-col md:flex-row justify-center gap-4">
-                <div className="md:w-[33%] mx-24 my-4">
+                <div className="md:w-[33%] mx-4 my-2">
                     <div className="text-center md:text-left">
-                        <h1 className="text-[4rem] mb-2">About Me</h1>
-                        <p className="text-[1.5rem]">
+                        <h1 className="text-[2rem] mb-2">About Me</h1>
+                        <p className="text-[0.75rem]">
                             I'm a full-stack developer with a background in data science.
                         </p>
-                        <p className="text-[1.5rem]">
+                        <p className="text-[0.75rem]">
                             Curiosity is my driving force (also coffee <span role="img" aria-label="coffee mug">☕</span>).
                         </p>
                     </div>
                 </div>
-                <div className="md:w-[33%] mx-24 my-4">
+                <div className="md:w-[33%] mx-4 my-2">
                     <SequentialShow>
                         <Pulse delay={1000} sequentialDelay={1000} >
-                            <img className="w-16" src={logoPython} alt="Python logo" />
+                            <img className="w-8" src={logoPython} alt="Python logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={2000} >
-                            <img className="w-16" src={logoGolang} alt="Golang logo" />
+                            <img className="w-8" src={logoGolang} alt="Golang logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={3000} >
-                            <img className="w-16" src={logoLinux} alt="Linux logo" />
+                            <img className="w-8" src={logoLinux} alt="Linux logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={4000} >
-                            <img className="w-16" src={logoJs} alt="Javascript logo" />
+                            <img className="w-8" src={logoJs} alt="Javascript logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={5000} >
-                            <img className="w-16" src={logoReact} alt="React logo" />
+                            <img className="w-8" src={logoReact} alt="React logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={6000} >
-                            <img className="w-16" src={logoVue} alt="Vue logo" />
+                            <img className="w-8" src={logoVue} alt="Vue logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={7000} >
-                            <img className="w-16" src={logoCpp} alt="C++ logo" />
+                            <img className="w-8" src={logoCpp} alt="C++ logo" />
                         </Pulse>
                     </SequentialShow>
                 </div>
