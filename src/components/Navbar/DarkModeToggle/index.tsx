@@ -25,7 +25,7 @@ export default function DarkModeToggle() {
             aria-label="dark mode"
             onClick={() => handleThemeToggle(isDark)}
         >
-            <FontAwesomeIcon className="text-[var(--primary)]" icon={faCircleHalfStroke} size="3x" />
+            <FontAwesomeIcon className="size-6 text-[var(--primary)]" icon={faCircleHalfStroke} />
         </button>
     )
 };
