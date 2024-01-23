@@ -67,11 +67,6 @@ export default function Navbar() {
                                 About Me
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)]" to="/contact" onClick={menuToggleHandler}>
-                                Contact
-                            </NavLink>
-                        </li>
                     </ul>
                 </nav>
                 <div className="flex justify-center px-2 gap-8">
