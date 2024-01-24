@@ -29,25 +29,25 @@ export default function About() {
                 <div className="md:w-[33%] mx-4 my-2">
                     <SequentialShow>
                         <Pulse delay={1000} sequentialDelay={1000} >
-                            <img className="w-8" src={logoJs} alt="Python logo" />
+                            <img className="w-8" src={logoJs} alt="JavaScript logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={2000} >
-                            <img className="w-8" src={logoReact} alt="Golang logo" />
+                            <img className="w-8" src={logoReact} alt="React logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={3000} >
-                            <img className="w-8" src={logoVue} alt="Linux logo" />
+                            <img className="w-8" src={logoVue} alt="Vue logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={4000} >
-                            <img className="w-8" src={logoPython} alt="Javascript logo" />
+                            <img className="w-8" src={logoPython} alt="Python logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={5000} >
-                            <img className="w-8" src={logoGolang} alt="React logo" />
+                            <img className="w-8" src={logoGolang} alt="Golang logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={6000} >
-                            <img className="w-8" src={logoCpp} alt="Vue logo" />
+                            <img className="w-8" src={logoCpp} alt="C++ logo" />
                         </Pulse>
                         <Pulse delay={1000} sequentialDelay={7000} >
-                            <img className="w-8" src={logoLinux} alt="C++ logo" />
+                            <img className="w-8" src={logoLinux} alt="Linux logo" />
                         </Pulse>
                     </SequentialShow>
                 </div>
