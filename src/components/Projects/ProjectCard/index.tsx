@@ -18,12 +18,13 @@ const ProjectCard = ({
                     {summary}
                 </p>
                 <div className="flex justify-between py-2 w-full">
-                    <a className="text-[1rem] font-semibold text-[var(--primary)] hover:text-[var(--accent-1)] transition-all ease-in-out" href={demoLink}>
+                    TODO: Tags will go here
+                    {/* <a className="text-[1rem] font-semibold text-[var(--primary)] hover:text-[var(--accent-1)] transition-all ease-in-out" href={demoLink}>
                         Live demo
                     </a>
                     <a className="text-[1rem] font-semibold text-[var(--primary)] hover:text-[var(--accent-1)] transition-all ease-in-out" href={githubLink}>
                         Project repo
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </a>
