@@ -8,5 +8,13 @@ export const contactSchema = z.object({
     message: z.string().nonempty()
 });
 
+export const projectCardSchema = z.object({
+    title: z.string().nonempty(),
+    summary: z.string().nonempty(),
+    imageSrc: z.string().nonempty(),
+    githubLink: z.string().nonempty(),
+    demoLink: z.string()
+});
 
+export type ProjectCardProps = z.infer<typeof projectCardSchema>;
 export type TContactSchema = z.infer<typeof contactSchema>;
