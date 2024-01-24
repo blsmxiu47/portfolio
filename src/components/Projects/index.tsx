@@ -7,39 +7,60 @@ export default function Projects() {
                 <h1 className="text-[2rem] mb-2">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <ProjectCard
-                        title="Project 1"
+                        title="Fearless Fitness Tracker"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
-                        githubLink="#"
+                        githubLink="https://github.com/blsmxiu47/fearless-fitness-tracker"
                     />
                     <ProjectCard
-                        title="Project 2"
+                        title="Pace Converter"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
-                        githubLink="#"
+                        githubLink="https://github.com/blsmxiu47/pace-converter"
                     />
                     <ProjectCard
-                        title="Project 3"
+                        title="Fantastic Product"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
-                        githubLink="#"
+                        githubLink="https://github.com/blsmxiu47/fantastic-product"
                     />
                     <ProjectCard
-                        title="Project 4"
+                        title="Time Since..."
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
-                        githubLink="#"
+                        githubLink="https://github.com/blsmxiu47/time-since"
                     />
                     <ProjectCard
-                        title="Project 5"
+                        title="cIRCb"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
-                        tags={["React", "TypeScript", "Tailwind CSS"]}
-                        githubLink="#"
+                        tags={["C"]}
+                        githubLink="https://github.com/blsmxiu47/circb"
+                    />
+                    <ProjectCard
+                        title="Haebaragi"
+                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        imageSrc="https://via.placeholder.com/200x150"
+                        tags={["Golang"]}
+                        githubLink="https://github.com/blsmxiu47/haebaragi"
+                    />
+                    <ProjectCard
+                        title="Gorter"
+                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        imageSrc="https://via.placeholder.com/200x150"
+                        tags={["Golang"]}
+                        githubLink="https://github.com/blsmxiu47/gorter"
+                    />
+                    <ProjectCard
+                        title="Glaso"
+                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        imageSrc="https://via.placeholder.com/200x150"
+                        tags={["JavaScript", "WebExtensions API"]}
+                        githubLink="https://github.com/blsmxiu47/glaso"
                     />
                 </div>
             </section>

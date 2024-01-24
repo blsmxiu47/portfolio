@@ -17,8 +17,7 @@ const ProjectCard = ({
                 <p className="py-1 text-[0.75rem]">
                     {summary}
                 </p>
-                <div className="flex justify-between py-2 w-full">
-                    {/* TODO: Tags */}
+                <div className="flex flex-wrap justify-center gap-4 py-2 w-full">
                     {tags.map((tag, index) => (
                         <span key={index} className="text-[0.75rem] font-semibold text-[var(--primary)]">
                             {tag}
