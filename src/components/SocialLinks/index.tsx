@@ -7,7 +7,7 @@ export default function SocialLinks() {
             <li className="p-4">
                 <a
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     href="https://github.com/blsmxiu47"
                 >
                     <FontAwesomeIcon
@@ -20,7 +20,7 @@ export default function SocialLinks() {
             <li className="p-4">
                 <a
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/wes-warriner/"
                 >
                     <FontAwesomeIcon
