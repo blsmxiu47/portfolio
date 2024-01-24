@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 
-const Projects = () => {
+export default function Projects() {
     return (
         <div className="mx-2 my-32">
             <section className="flex flex-col text-center mx-8">
@@ -10,41 +10,39 @@ const Projects = () => {
                         title="Project 1"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
-                        demoLink="#"
+                        tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="#"
                     />
                     <ProjectCard
                         title="Project 2"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
-                        demoLink="#"
+                        tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="#"
                     />
                     <ProjectCard
                         title="Project 3"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
-                        demoLink="#"
+                        tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="#"
                     />
                     <ProjectCard
                         title="Project 4"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
-                        demoLink="#"
+                        tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="#"
                     />
                     <ProjectCard
                         title="Project 5"
                         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
                         imageSrc="https://via.placeholder.com/200x150"
-                        demoLink="#"
+                        tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="#"
                     />
                 </div>
             </section>
         </div>
     )
-}
-
-export default Projects;
+};
