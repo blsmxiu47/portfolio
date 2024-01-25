@@ -49,21 +49,21 @@ export default function Navbar() {
                     <img className="h-16" src={Logo} alt="logo" />
                 </Link>
                 <nav
-                    className={`flex md:block w-full md:w-auto flex-col justify-center items-center text-center ${menuOpen ? "fixed top-0 left-0 h-lvh bg-white bg-opacity-50 backdrop-blur-md" : "hidden"}`}
+                    className={`flex md:block w-full md:w-auto flex-col justify-center items-center text-center ${menuOpen ? "fixed top-0 left-0 h-lvh not(dark):bg-white/50 dark:bg-[var(--bg-dark)]/50 backdrop-blur-md" : "hidden"}`}
                 >
                     <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)]" to="/" onClick={menuToggleHandler}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/" onClick={menuToggleHandler}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)]" to="/projects" onClick={menuToggleHandler}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/projects" onClick={menuToggleHandler}>
                                 Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)]" to="/about" onClick={menuToggleHandler}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/about" onClick={menuToggleHandler}>
                                 About Me
                             </NavLink>
                         </li>
@@ -72,7 +72,7 @@ export default function Navbar() {
                 <div className="flex justify-center px-2 gap-8">
                     <DarkModeToggle />
                     <button
-                        className="flex md:hidden flex-col items-center justify-between focus:outline-none text-[var(--primary)]"
+                        className="flex md:hidden flex-col items-center justify-between focus:outline-none text-[var(--primary)] dark:text-[var(--primary-dark)]"
                         onClick={menuToggleHandler}
                     >
                         <span className="sr-only">Open main nav</span>

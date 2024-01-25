@@ -4,7 +4,7 @@ import Navbar from '../Navbar';
 
 export default function Layout() {
     return (
-        <main className="bg-[var(--bg)] dark:bg-[var(--bg-dark)] min-h-screen">
+        <main className="bg-[var(--bg)] dark:bg-[var(--bg-dark)] min-h-screen text-black dark:text-white">
             <Navbar />
             <Outlet />
         </main>
