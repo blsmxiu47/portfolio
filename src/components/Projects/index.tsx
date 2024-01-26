@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
     return (
-        <div className="mx-2 my-32">
+        <div className="px-2 py-32">
             <section className="flex flex-col text-center mx-8">
                 <h1 className="text-[2rem] mb-2">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

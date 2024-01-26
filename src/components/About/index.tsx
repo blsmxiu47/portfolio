@@ -6,14 +6,17 @@ import logoReact from '../../assets/images/logo_reactjs.svg';
 import logoVue from '../../assets/images/logo_vuejs.svg';
 import logoCpp from '../../assets/images/logo_c_plus_plus.svg';
 
+import { useNavMenuContext } from '../../contexts/NavMenuContext';
 import Pulse from './Pulse';
 import SequentialShow from './SequentialShow';
 
 import '../../index.css';
 
 export default function About() {
+    const { isNavMenuOpen } = useNavMenuContext();
+
     return (
-        <div className="mx-2 my-16 md:my-48">
+        <div className="px-2 py-16 md:py-48">
             <div className="flex flex-col md:flex-row justify-center gap-4">
                 <div className="md:w-[33%] mx-4 my-2">
                     <div className="text-center md:text-left">
@@ -26,7 +29,9 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-                <div className="md:w-[33%] mx-4 my-2">
+                <div 
+                    className={`md:w-[33%] mx-4 my-2 ${isNavMenuOpen ? "blur" : ""}`}
+                >
                     <SequentialShow>
                         <Pulse delay={1000} sequentialDelay={1000} >
                             <img className="w-8" src={logoJs} alt="JavaScript logo" />
