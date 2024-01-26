@@ -17,7 +17,7 @@ export default function Navbar() {
                     <img className="h-16" src={Logo} alt="logo" />
                 </Link>
                 <nav
-                    className={`flex md:block w-full md:w-auto flex-col justify-center items-center text-center ${isNavMenuOpen ? "fixed top-0 left-0 h-lvh not(dark):bg-white/50 dark:bg-[var(--bg-dark)]/50 backdrop-blur-md" : "hidden"}`}
+                    className={`flex md:block w-full md:w-auto flex-col justify-center items-center text-center ${isNavMenuOpen ? "fixed top-0 left-0 h-lvh not(dark):bg-white/50 dark:bg-gray-900/50 backdrop-blur-md" : "hidden"}`}
                 >
                     <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
                         <li>
