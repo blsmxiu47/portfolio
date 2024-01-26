@@ -8,21 +8,21 @@ export default function Projects() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <ProjectCard
                         title="Fearless Fitness Tracker"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Web app for designing workout routines and tracking training history. Specially designed to meet the needs of runners with respect to building training plans and tracking progress toward goals."
                         imageSrc="https://via.placeholder.com/200x100"
-                        tags={["React", "TypeScript", "Tailwind CSS"]}
+                        tags={["Next.js", "AWS", "PostgreSQL"]}
                         githubLink="https://github.com/blsmxiu47/fearless-fitness-tracker"
                     />
                     <ProjectCard
                         title="Pace Converter"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Web app for converting (e.g. running) paces from min/km to min/mi and vice versa, and for converting pace to 5k, marathon, etc. race times."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="https://github.com/blsmxiu47/pace-converter"
                     />
                     <ProjectCard
                         title="Fantastic Product"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Sample website for a fictional software product. Built to showcase responsive design principles and a variety of UI components."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="https://github.com/blsmxiu47/fantastic-product"
