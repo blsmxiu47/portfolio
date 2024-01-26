@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 interface NavMenuContextProps {
     isNavMenuOpen: boolean;
@@ -13,35 +13,6 @@ export const NavMenuContextProvider = ({
     children: React.ReactNode
 }) => {
     const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
-
-    useEffect(() => {
-        setIsNavMenuOpen(false);
-    }, []);
-    const [size, setSize] = useState({
-        width: 0,
-        height: 0,
-    });
-    
-    useEffect(() => {
-        function handleResize () {
-            setSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        }
-
-        handleResize();
-        
-        window.addEventListener("resize", handleResize);
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    useEffect(() => {
-        if (size.width > 768 && isNavMenuOpen) {
-            setIsNavMenuOpen(false);
-        }
-    }, [size.width, isNavMenuOpen]);
 
     const toggleNavMenu = () => {
         setIsNavMenuOpen((prevState) => !prevState);

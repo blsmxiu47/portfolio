@@ -6,9 +6,30 @@ import { useNavMenuContext } from '../../contexts/NavMenuContext';
 import DarkModeToggle from './DarkModeToggle';
 
 import '../../index.css';
+import { useEffect } from 'react';
 
 export default function Navbar() {
-    const { isNavMenuOpen, toggleNavMenu } = useNavMenuContext(); 
+    const { isNavMenuOpen, toggleNavMenu } = useNavMenuContext();
+
+    // toggle nav menu when a link is clicked but only if window width is less than 768px
+    const handleNavLinkClick = () => {
+        if (window.innerWidth < 768) {
+            toggleNavMenu();
+        }
+    }
+
+    // auto-close nav menu when window width is greater than 768px
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth > 768 && isNavMenuOpen) {
+                toggleNavMenu();
+            }
+        }
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    });
 
     return (
         <header className="relative z-10 p-2 md:px-6">
@@ -21,17 +42,17 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/" onClick={toggleNavMenu}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/" onClick={handleNavLinkClick}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/projects" onClick={toggleNavMenu}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/projects" onClick={handleNavLinkClick}>
                                 Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/about" onClick={toggleNavMenu}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/about" onClick={handleNavLinkClick}>
                                 About Me
                             </NavLink>
                         </li>
@@ -41,7 +62,7 @@ export default function Navbar() {
                     <DarkModeToggle />
                     <button
                         className="flex md:hidden flex-col items-center justify-between focus:outline-none text-[var(--primary)] dark:text-[var(--primary-dark)]"
-                        onClick={toggleNavMenu}
+                        onClick={handleNavLinkClick}
                     >
                         <span className="sr-only">Open main nav</span>
                         <span
