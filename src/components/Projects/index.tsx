@@ -1,3 +1,5 @@
+// import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
+
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
@@ -10,6 +12,7 @@ export default function Projects() {
                         title="Fearless Fitness Tracker"
                         summary="Web app for designing workout routines and tracking training history. Specially designed to meet the needs of runners with respect to building training plans and tracking progress toward goals."
                         imageSrc="https://via.placeholder.com/200x100"
+                        // imageSrc={projectCardImageFFT}
                         tags={["Next.js", "AWS", "PostgreSQL"]}
                         githubLink="https://github.com/blsmxiu47/fearless-fitness-tracker"
                     />
@@ -29,35 +32,35 @@ export default function Projects() {
                     />
                     <ProjectCard
                         title="Time Since..."
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Web app for calculating datetime difference between two dates and/or times using a range of units."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="https://github.com/blsmxiu47/time-since"
                     />
                     <ProjectCard
                         title="cIRCb"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Internet Relay Chat (IRC) written entirely in C, with support for an arbitrary number of servers and clients. Includes user authentication, scalability, and fault tolerance."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["C"]}
                         githubLink="https://github.com/blsmxiu47/circb"
                     />
                     <ProjectCard
                         title="Haebaragi"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="API for Haebaragi vocabulary, expressions, and grammar points data (Haebaragi is a spaced repitition-style language learning app also built with Go)."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["Golang"]}
                         githubLink="https://github.com/blsmxiu47/haebaragi"
                     />
                     <ProjectCard
                         title="Gorter"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Ultra-simple URL shortener written in Go. Rather than simply generating a shorter URL, also adds an (adimittedly silly) element of fun and surprise to the generation process."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["Golang"]}
                         githubLink="https://github.com/blsmxiu47/gorter"
                     />
                     <ProjectCard
                         title="Glaso"
-                        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae aliquam nisl."
+                        summary="Motivational browser extension built using the WebExtensions API."
                         imageSrc="https://via.placeholder.com/200x100"
                         tags={["JavaScript", "WebExtensions API"]}
                         githubLink="https://github.com/blsmxiu47/glaso"
