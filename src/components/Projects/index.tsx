@@ -1,4 +1,5 @@
 // import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
+import projectCardImagePC from "../../assets/images/project-card-image-pace-converter.png";
 
 import ProjectCard from "./ProjectCard";
 
@@ -19,7 +20,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Pace Converter"
                         summary="Web app for converting (e.g. running) paces from min/km to min/mi and vice versa, and for converting pace to 5k, marathon, etc. race times."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        imageSrc={projectCardImagePC}
                         tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="https://github.com/blsmxiu47/pace-converter"
                     />
