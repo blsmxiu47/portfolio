@@ -1,5 +1,6 @@
 // import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
 import projectCardImagePC from "../../assets/images/project-card-image-pace-converter.png";
+import projectCardImageGorter from "../../assets/images/project-card-image-gorter.png";
 
 import ProjectCard from "./ProjectCard";
 
@@ -55,7 +56,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Gorter"
                         summary="Ultra-simple URL shortener written in Go. Rather than simply generating a shorter URL, also adds an (adimittedly silly) element of fun and surprise to the generation process."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        imageSrc={projectCardImageGorter}
                         tags={["Golang"]}
                         githubLink="https://github.com/blsmxiu47/gorter"
                     />
