@@ -1,6 +1,7 @@
 // import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
-import projectCardImagePC from "../../assets/images/project-card-image-pace-converter.png";
 import projectCardImageGorter from "../../assets/images/project-card-image-gorter.png";
+import projectCardImagePC from "../../assets/images/project-card-image-pace-converter.png";
+import projectCardImageTimeSince from "../../assets/images/project-card-image-time-since.png";
 
 import ProjectCard from "./ProjectCard";
 
@@ -35,7 +36,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Time Since..."
                         summary="Web app for calculating datetime difference between two dates and/or times using a range of units."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        imageSrc={projectCardImageTimeSince}
                         tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="https://github.com/blsmxiu47/time-since"
                     />
