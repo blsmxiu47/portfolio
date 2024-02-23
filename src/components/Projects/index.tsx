@@ -1,5 +1,6 @@
 // import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
 import projectCardImageGorter from "../../assets/images/project-card-image-gorter.png";
+import projectCardImageHaebaragi from "../../assets/images/project-card-image-haebaragi.png";
 import projectCardImagePC from "../../assets/images/project-card-image-pace-converter.png";
 import projectCardImageTimeSince from "../../assets/images/project-card-image-time-since.png";
 
@@ -50,7 +51,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Haebaragi"
                         summary="API for Haebaragi vocabulary, expressions, and grammar points data (Haebaragi is a spaced repitition-style language learning app also built with Go)."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        imageSrc={projectCardImageHaebaragi}
                         tags={["Golang"]}
                         githubLink="https://github.com/blsmxiu47/haebaragi"
                     />
