@@ -1,4 +1,4 @@
-// import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
+import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
 import projectCardImageGlaso from "../../assets/images/project-card-image-glaso.png";
 import projectCardImageGorter from "../../assets/images/project-card-image-gorter.png";
 import projectCardImageHaebaragi from "../../assets/images/project-card-image-haebaragi.png";
@@ -16,8 +16,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Fearless Fitness Tracker"
                         summary="Web app for designing workout routines and tracking training history. Specially designed to meet the needs of runners with respect to building training plans and tracking progress toward goals."
-                        imageSrc="https://via.placeholder.com/200x100"
-                        // imageSrc={projectCardImageFFT}
+                        imageSrc={projectCardImageFFT}
                         tags={["Next.js", "AWS", "PostgreSQL"]}
                         githubLink="https://github.com/blsmxiu47/fearless-fitness-tracker"
                     />
