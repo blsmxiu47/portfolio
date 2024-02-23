@@ -1,4 +1,5 @@
 // import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
+import projectCardImageGlaso from "../../assets/images/project-card-image-glaso.png";
 import projectCardImageGorter from "../../assets/images/project-card-image-gorter.png";
 import projectCardImageHaebaragi from "../../assets/images/project-card-image-haebaragi.png";
 import projectCardImagePC from "../../assets/images/project-card-image-pace-converter.png";
@@ -65,7 +66,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Glaso"
                         summary="Motivational browser extension built using the WebExtensions API."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        imageSrc={projectCardImageGlaso}
                         tags={["JavaScript", "WebExtensions API"]}
                         githubLink="https://github.com/blsmxiu47/glaso"
                     />
