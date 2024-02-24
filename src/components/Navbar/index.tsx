@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo.svg';
 
 import { useNavMenuContext } from '../../contexts/NavMenuContext';
 import DarkModeToggle from './DarkModeToggle';
