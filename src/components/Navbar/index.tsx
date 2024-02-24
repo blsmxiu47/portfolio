@@ -34,7 +34,7 @@ export default function Navbar() {
     return (
         <header className="relative z-10 p-2 md:px-6">
             <div className="flex items-center justify-between">
-                <Link to="/" className="rounded focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]">
+                <Link to="/" className="rounded focus:outline-none focus-visible:ring-1 focus:ring-offset-2 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]">
                     <img className="h-16" src={Logo} alt="logo" />
                 </Link>
                 <nav
@@ -42,17 +42,17 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/" onClick={handleNavLinkClick}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus-visible:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/" onClick={handleNavLinkClick}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/projects" onClick={handleNavLinkClick}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus-visible:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/projects" onClick={handleNavLinkClick}>
                                 Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/about" onClick={handleNavLinkClick}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus-visible:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/about" onClick={handleNavLinkClick}>
                                 About Me
                             </NavLink>
                         </li>

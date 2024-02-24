@@ -9,7 +9,7 @@ export default function SocialLinks() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/blsmxiu47"
-                    className="block rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
+                    className="block rounded focus:outline-none focus-visible:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
                 >
                     <FontAwesomeIcon
                         className="block size-6 sm:size-8 text-black dark:text-white"
@@ -22,7 +22,7 @@ export default function SocialLinks() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/wes-warriner/"
-                    className="block rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
+                    className="block rounded focus:outline-none focus-visible:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
                 >
                     <FontAwesomeIcon
                         className="block size-6 sm:size-8 text-[#0A66C2] dark:text-white"

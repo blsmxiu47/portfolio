@@ -9,7 +9,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
     return (
         <a
-            className="relative group h-80 max-w-[16rem] justify-self-center flex flex-col justify-top mx-2 my-1 rounded-lg shadow-md hover:scale-110 transition duration-700 ease-in-out cursor:pointer bg-gray-100 dark:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
+            className="relative group h-80 max-w-[16rem] justify-self-center flex flex-col justify-top mx-2 my-1 rounded-lg shadow-md hover:scale-110 transition duration-700 ease-in-out cursor:pointer bg-gray-100 dark:bg-gray-800 focus:outline-none focus-visible:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
