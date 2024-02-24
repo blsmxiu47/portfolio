@@ -1,3 +1,4 @@
+import projectCardImageFantasticProduct from "../../assets/images/project-card-image-fantastic-product.png";
 import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
 import projectCardImageGlaso from "../../assets/images/project-card-image-glaso.png";
 import projectCardImageGorter from "../../assets/images/project-card-image-gorter.png";
@@ -32,7 +33,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Fantastic Product"
                         summary="Sample website for a fictional software product. Built to showcase responsive design principles and a variety of UI components."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        imageSrc={projectCardImageFantasticProduct}
                         tags={["React", "TypeScript", "Tailwind CSS"]}
                         githubLink="https://github.com/blsmxiu47/fantastic-product"
                     />
