@@ -23,11 +23,20 @@ export default {
       },
       animation: {
         'pulse': 'pulse 7s infinite',
+        'semipulse': 'semipulse 7s infinite',
       },
       keyframes: {
         pulse: {
           '0%, 100%': {
             opacity: 0,
+          },
+          '50%': {
+            opacity: 1,
+          },
+        },
+        semipulse: {
+          '0%, 100%': {
+            opacity: 0.5,
           },
           '50%': {
             opacity: 1,
