@@ -1,3 +1,4 @@
+import projectCardImageCIRCb from "../../assets/images/project-card-image-circb.png";
 import projectCardImageFantasticProduct from "../../assets/images/project-card-image-fantastic-product.png";
 import projectCardImageFFT from "../../assets/images/project-card-image-fft.png";
 import projectCardImageGlaso from "../../assets/images/project-card-image-glaso.png";
@@ -45,9 +46,9 @@ export default function Projects() {
                         githubLink="https://github.com/blsmxiu47/time-since"
                     />
                     <ProjectCard
-                        title="cIRCb"
-                        summary="Internet Relay Chat (IRC) written entirely in C, with support for an arbitrary number of servers and clients. Includes user authentication, scalability, and fault tolerance."
-                        imageSrc="https://via.placeholder.com/200x100"
+                        title="🚧 cIRCb 🚧"
+                        summary="Internet Relay Chat (IRC) written entirely in C, with support for an arbitrary number of servers and clients. Emphasis on user authentication, scalability, and fault tolerance."
+                        imageSrc={projectCardImageCIRCb}
                         tags={["C"]}
                         githubLink="https://github.com/blsmxiu47/circb"
                     />
