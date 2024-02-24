@@ -5,19 +5,20 @@
 * Vite
 * ReactJS
 * TypeScript
-* Sass
+* TailwindCSS
 
 ## Features
 
-* Responsive Design
-* Dark Mode
+* Responsive design
+* Dark mode
+* Custom CSS animations
 
 ## Getting Started
 
 1. Clone the repo: ```git clone https://github.com/blsmxiu47/portfolio.git```
 2. Install dependencies: ```npm install```
-3. Start the server: ```npm start```
-4. View in browser at [http://localhost:3000](http://localhost:3000)
+3. Start the server: ```npm run dev```
+4. View in browser at [http://localhost:5173](http://localhost:5173)
 
 ## License
 
