@@ -23,9 +23,10 @@ export default function DarkModeToggle() {
             type="button"
             title="Enable dark mode"
             aria-label="dark mode"
+            className="rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]"
             onClick={() => setIsDark(!isDark)}
         >
-            <FontAwesomeIcon className="size-6 text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" icon={faCircleHalfStroke} />
+            <FontAwesomeIcon className="block size-6 text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" icon={faCircleHalfStroke} />
         </button>
     )
 };

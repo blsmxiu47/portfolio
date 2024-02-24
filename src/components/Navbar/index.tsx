@@ -34,7 +34,7 @@ export default function Navbar() {
     return (
         <header className="relative z-10 p-2 md:px-6">
             <div className="flex items-center justify-between">
-                <Link to="/">
+                <Link to="/" className="rounded focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]">
                     <img className="h-16" src={Logo} alt="logo" />
                 </Link>
                 <nav
@@ -42,17 +42,17 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col md:flex-row text-center justify-center md:justify-end gap-8 md:gap-16 md:mr-8">
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/" onClick={handleNavLinkClick}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/" onClick={handleNavLinkClick}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/projects" onClick={handleNavLinkClick}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/projects" onClick={handleNavLinkClick}>
                                 Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)]" to="/about" onClick={handleNavLinkClick}>
+                            <NavLink className="text-[1.5rem] text-[var(--primary)] dark:text-[var(--primary-dark)] hover:text-[var(--secondary)] dark:hover:text-[var(--secondary)] rounded focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-[var(--primary)] focus:ring-[var(--primary)] dark:focus:ring-offset-[var(--primary-dark)] dark:focus:ring-[var(--primary-dark)]" to="/about" onClick={handleNavLinkClick}>
                                 About Me
                             </NavLink>
                         </li>
@@ -67,7 +67,7 @@ export default function Navbar() {
                         <span className="sr-only">Open main nav</span>
                         <span
                             aria-hidden="true"
-                            className={`h-1 w-12 bg-current transform transition duration-500 ease-in-out rounded ${isNavMenuOpen ? "translate-y-[12px] rotate-45" : " -translate-y-2"}`}
+                            className={`h-1 w-12 bg-current transform transition duration-500 ease-in-out rounded ${isNavMenuOpen ? "translate-y-[10px] rotate-45" : " -translate-y-2"}`}
                         ></span>
                         <span
                             aria-hidden="true"
@@ -75,7 +75,7 @@ export default function Navbar() {
                         ></span>
                         <span
                             aria-hidden="true"
-                            className={`h-1 w-12 bg-current transform transition duration-500 ease-in-out rounded ${isNavMenuOpen ? " -translate-y-[12px] -rotate-45" : " translate-y-2"}`}
+                            className={`h-1 w-12 bg-current transform transition duration-500 ease-in-out rounded ${isNavMenuOpen ? " -translate-y-[10px] -rotate-45" : " translate-y-2"}`}
                         ></span>
                     </button>
                 </div>
