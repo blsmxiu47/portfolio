@@ -15,7 +15,7 @@
 
 @layer base {
     @font-face {
-        font-family: 'Helvetica Neue';
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         src: url('./assets/fonts/helvetica-neu.ttf') format('tff');
     }
 
