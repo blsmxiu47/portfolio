@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import Logo from '../../assets/images/logo.png';
@@ -6,7 +7,6 @@ import { useNavMenuContext } from '../../contexts/NavMenuContext';
 import DarkModeToggle from './DarkModeToggle';
 
 import '../../index.css';
-import { useEffect } from 'react';
 
 export default function Navbar() {
     const { isNavMenuOpen, toggleNavMenu } = useNavMenuContext();
