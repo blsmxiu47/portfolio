@@ -22,7 +22,7 @@ const Pulse: React.FC<PulseProps> = ({ children, delay, sequentialDelay }) => {
     }, [delay, sequentialDelay]);
 
     return (
-        <div className={`animate-pulse ${visible ? "" : "hidden"}`}>
+        <div className={`items-center animate-pulse ${visible ? "" : "hidden"}`}>
             {children}
         </div>
     );
